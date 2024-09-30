@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Path Visualization with Human-like Movement</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <button id="resetButton">Reset</button>
+    <button id="exportButton">Export</button>
+    <button id="simulateButton">Simulate</button>
+
+    <!-- Parameter GUI -->
+    <div id="parameterGUI">
+        <h3>Simulation Parameters</h3>
+        <label for="fittsA">Fitts's Law A:</label>
+        <input type="number" id="fittsA" value="0.5" step="0.01"><br>
+        <label for="fittsB">Fitts's Law B:</label>
+        <input type="number" id="fittsB" value="0.21" step="0.01"><br>
+        <label for="minSteps">Minimum Steps:</label>
+        <input type="number" id="minSteps" value="60"><br>
+        <label for="controlPointVariance">Control Point Variance:</label>
+        <input type="number" id="controlPointVariance" value="0.34" step="0.1"><br>
+        <label for="noiseAmplitude">Noise Amplitude:</label>
+        <input type="number" id="noiseAmplitude" value="1.6" step="0.1"><br>
+        <label for="jitterAmplitude">Jitter Amplitude:</label>
+        <input type="number" id="jitterAmplitude" value="0.7" step="0.1"><br>
+        <label for="pauseProbability">Pause Probability:</label>
+        <input type="number" id="pauseProbability" value="0.01" step="0.01"><br>
+        <label for="overshootProbability">Overshoot Probability:</label>
+        <input type="number" id="overshootProbability" value="0.2" step="0.01"><br>
+        <label for="speedVariability">Speed Variability:</label>
+        <input type="number" id="speedVariability" value="0.0" step="0.1"><br>
+    </div>
+
+    <!-- Classification GUI -->
+    <div id="classificationGUI">
+        <h3>Classify the Path</h3>
+        <button id="humanButton">Human</button>
+        <button id="algorithmButton">Algorithm</button>
+        <button id="completeButton">Complete</button>
+        <div id="accuracyDisplay"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/visualizer.js"></script>
+    <script src="../js/fanta.js"></script>
+</body>
+</html>

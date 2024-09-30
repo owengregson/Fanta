@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+#canvas {
+    display: block;
+}
+
+#resetButton,
+#exportButton,
+#simulateButton {
+    position: absolute;
+    top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#resetButton,
+#exportButton {
+    display: none; /* Hidden initially */
+}
+
+#resetButton {
+    left: 10px;
+}
+
+#exportButton {
+    left: 100px; /* Adjust as needed */
+}
+
+#simulateButton {
+    right: 10px;
+    display: block; /* Visible initially */
+}
+
+/* Parameter GUI Styling */
+#parameterGUI {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background-color: rgba(201, 201, 201, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    display: block; /* Visible initially */
+    font-size: 14px;
+}
+
+#parameterGUI h3 {
+    margin-top: 0;
+}
+
+#parameterGUI label {
+    display: block;
+    margin-top: 5px;
+}
+
+#parameterGUI input {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* Classification GUI Styling */
+#classificationGUI {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    background-color: rgba(194, 194, 194, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* Hidden initially */
+    font-size: 14px;
+}
+
+#classificationGUI h3 {
+    margin-top: 0;
+}
+
+#classificationGUI button {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+#accuracyDisplay {
+    margin-top: 10px;
+    font-weight: bold;
+}
